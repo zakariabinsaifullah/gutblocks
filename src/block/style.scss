@@ -1,0 +1,35 @@
+.page-header {
+    padding: 70px 0;
+    .container {
+        margin: 0 auto;
+    }
+    .block-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .image-wrapper {
+        text-align: center;
+    }
+
+    .image-wrapper, .inner-blocks-wrapper {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .page-header {
+        padding: 50px 0 !important;
+        .block-content {
+            display: flex !important;
+            flex-direction: column !important;
+        }
+        .inner-blocks-wrapper {
+            text-align: center !important;
+            .wp-block-button {
+                float: none !important;
+            }
+        }
+    }
+}
